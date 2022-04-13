@@ -1,0 +1,113 @@
+$background_color_banniere : rgb(26, 26, 26);
+$background_color_section_amont : rgba(134, 81, 203, 0.8);
+$background_color_section_intermediaire : rgba(227, 147, 93, 0.8);
+$background_color_section_aval : rgba(48, 155, 209, 0.8);
+$background_color_audio_amont : aqua;
+$colo_banniere_p : white;
+$background_color_type_activite : #d3555d;
+
+
+$size_left_box_width : 60%;
+$size_acteur_profil : 20vmin;
+$gap : 5vmin;
+
+#filiere_audiovisuel {
+    scroll-snap-type: x mandatory;
+
+    .section_filiere:nth-child(1){
+        background-color: $background_color_banniere;
+    }
+    
+    .section_filiere:nth-child(2){
+        background-color: $background_color_section_amont;
+    }
+
+    .section_filiere:nth-child(3){
+        background-color: $background_color_section_intermediaire;
+    }
+    
+    .section_filiere:nth-child(4){
+        background-color: $background_color_section_aval;
+    }
+    
+    .section_filiere{
+        padding-top: 10vmin;
+        height: 100vmin;
+        // display: flex;
+        scroll-snap-align: start;
+        position: relative;
+        
+        .banniere_filiere{
+            height: 100vmin;
+            color: $colo_banniere_p;
+            
+            .container{
+                // display: flex;
+                .left_box_banniere{
+                    width: $size_left_box_width;
+                    margin-top: 15vh;
+                }
+            }
+        }
+
+        .title_phase{
+            position : absolute;
+            top : 50%;
+            right: 0;
+            text-transform: uppercase;
+            color: $colo_banniere_p;
+            opacity: 0.8;
+            transform: rotate(-90deg);
+            font-size: 10vh;
+            font-weight: 800;
+        }
+        .phase {
+            position: relative;
+
+            // background-color: $background_color_audio_amont ;
+            .section_type_activite{
+                display: flex;
+                flex-flow: row wrap;
+                .title_type_activite{
+                    position: relative;
+                    background-color: $background_color_type_activite;
+                    color: $colo_banniere_p;
+                    text-transform: uppercase;
+                width: $size_acteur_profil;
+                height: $size_acteur_profil;
+                border-radius: 50%;
+                margin: $gap;
+                
+                    p{
+                        position: relative;
+                        top: 43%;
+                        text-align: center;
+                    }
+                }
+                .acteur_box{
+                    position: relative;
+                    width: $size_acteur_profil*2;
+                    height: $size_acteur_profil*2;
+                    text-align: center;
+                    img{
+                        position: relative;
+                        width: $size_acteur_profil;
+                        height: $size_acteur_profil;
+                        border-radius: 50%;
+                        
+                    }
+                    p{
+                        position: relative;
+                        color: $colo_banniere_p;
+                    }
+                
+                }
+            }
+        }
+    }
+}
+
+// .center_vertical{
+//     display: flex;
+//     align-items:center;
+// }

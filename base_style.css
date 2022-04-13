@@ -1,0 +1,80 @@
+:root {
+  /*VARIABLES GLOBALE*/
+  --main_color: #000;
+  --second_color: red;
+  --desk_width: 1280px;
+  --font_title: 'Oswald', sans-serif;
+  --main_font: 'Poppins', sans-serif;
+
+  /*AUTRES VARIABLES*/
+
+}
+
+/*STYLE GLOBALE*/
+body {
+  font-size: 16px;
+}
+
+.container {
+ border: 1px solid black;
+ width: 100%;
+ max-width: var(--desk_width);
+ margin: 0 auto;
+ padding: 1em;
+}
+
+.container-fluid {
+  border: 1px solid red;
+  background: chartreuse;
+}
+h1, h2, h3{
+  color: var(--second_color);
+  font-family:var(--font_title);
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4.5em;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 3.5em;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 2.5em;
+  margin-top: 0.8em;
+}
+
+p, a {
+  font-family:var(--main_font);
+  line-height: 160%;
+  text-decoration: none;
+}
+
+p{
+  margin-bottom: 1em;
+}
+
+a {
+  color: red;
+}
+
+a:hover {
+  color: green;
+}
+/*FIN DU STYLE GLOBALE*/
+
+/*CSS POUR nom_de_ton_fichier_html*/
+#filiere_audiovisuel .banniere_filiere .container .left_box_banniere .p {
+  color: white;
+}
+/*FIN DE CSS POUR nom_de_ton_fichier_html*/
+
+
+
+/*CHACUN MET SON CSS DANS SA BALISE COMMENTAIRE SVP*/

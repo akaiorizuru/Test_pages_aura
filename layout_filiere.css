@@ -1,0 +1,101 @@
+#filiere_audiovisuel {
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+#filiere_audiovisuel .section_filiere:nth-child(1) {
+  background-color: #1a1a1a;
+}
+
+#filiere_audiovisuel .section_filiere:nth-child(2) {
+  background-color: rgba(134, 81, 203, 0.8);
+}
+
+#filiere_audiovisuel .section_filiere:nth-child(3) {
+  background-color: rgba(227, 147, 93, 0.8);
+}
+
+#filiere_audiovisuel .section_filiere:nth-child(4) {
+  background-color: rgba(48, 155, 209, 0.8);
+}
+
+#filiere_audiovisuel .section_filiere {
+  padding-top: 10vmin;
+  height: 100vmin;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+#filiere_audiovisuel .section_filiere .banniere_filiere {
+  height: 100vmin;
+  color: white;
+}
+
+#filiere_audiovisuel .section_filiere .banniere_filiere .container .left_box_banniere {
+  width: 60%;
+  margin-top: 15vh;
+}
+
+#filiere_audiovisuel .section_filiere .title_phase {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0.8;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-size: 10vh;
+  font-weight: 800;
+}
+
+#filiere_audiovisuel .section_filiere .phase {
+  position: relative;
+}
+
+#filiere_audiovisuel .section_filiere .phase .section_type_activite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+#filiere_audiovisuel .section_filiere .phase .section_type_activite .title_type_activite {
+  position: relative;
+  background-color: #d3555d;
+  color: white;
+  text-transform: uppercase;
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 50%;
+  margin: 5vmin;
+}
+
+#filiere_audiovisuel .section_filiere .phase .section_type_activite .title_type_activite p {
+  position: relative;
+  top: 43%;
+  text-align: center;
+}
+
+#filiere_audiovisuel .section_filiere .phase .section_type_activite .acteur_box {
+  position: relative;
+  width: 40vmin;
+  height: 40vmin;
+  text-align: center;
+}
+
+#filiere_audiovisuel .section_filiere .phase .section_type_activite .acteur_box img {
+  position: relative;
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 50%;
+}
+
+#filiere_audiovisuel .section_filiere .phase .section_type_activite .acteur_box p {
+  position: relative;
+  color: white;
+}
+/*# sourceMappingURL=layout_filiere.css.map */

@@ -1,0 +1,7 @@
+Bonjour chers developpeurs,
+
+Voici quelques consignes avant de vous lancer dans votre session de code intense.
+
+Ton fichier html tu nommeras correctement. Exemple : aurazar.html
+Tes nouvelles variables tu mettras dans /*AUTRES VARIABLES*/.
+Ton nouveau css tu inscriras dans /*CSS POUR nom_de_ton_fichier_html*/
