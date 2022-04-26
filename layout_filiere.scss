@@ -120,12 +120,21 @@ $gap : 5vmin;
 
             .title_type_activite_clicked{
                 background-color: white;
-                // border-style: solid;
-                // border-width: 2px;
-                // border-color: $background_color_type_activite;
-                box-shadow:0px 0px 0px 5px $background_color_type_activite inset;
+                box-shadow:0px 0px 0px 5px $background_color_type_activite inset; //border inside
                 color: $background_color_type_activite;
             }
+
+            // .acteur_box:nth-child(2){
+            //     top: -10px;
+            //     color:red;
+            // }
+            // .acteur_box:nth-child(2){
+            //     top: -10px;
+            //     color:red;
+            //     box-shadow:0px 0px 0px 5px red;
+            //     background-color: red;
+            // }
+
         }
     }
 }
