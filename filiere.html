@@ -10,7 +10,8 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <title></title>
+      <script src="./filiere-script.js"></script>
+      <title>Filière Audiovisuel</title>
   </head>
   <body>
       <div id="filiere_audiovisuel">
@@ -42,14 +43,14 @@
                            
                         </div>
                         <div class="section_type_activite section_conception">
-                            <div class="title_type_activite conception">
-                                <p>
-                                    Conception
-                                </p>
-                            </div>
                             <div class="acteur_box conception">
                                 <img src="img/acteur_profil/ARNAUD_AUGST.jpg" alt="acteur_profil">
                                 <p>ARNAUD AUGST, Monteur</p>
+                            </div>
+                            <div class="title_type_activite title_type_activite_notClicked conception_btn conception" data-filter="conception ">
+                                <p>
+                                    Conception
+                                </p>
                             </div>
                             <div class="acteur_box conception">
                                 <img src="img/acteur_profil/ARNAUD_AUGST.jpg" alt="acteur_profil">
@@ -71,14 +72,14 @@
                         
                         <div class="section_type_activite section_realisation">
                             
-                            <div class="title_type_activite realisation">
-                                <p>
-                                    Réalisation
-                                </p>
-                            </div>
                             <div class="acteur_box realisation">
                                 <img src="img/acteur_profil/ARNAUD_AUGST.jpg" alt="acteur_profil">
                                 <p>ARNAUD AUGST, Monteur</p>
+                            </div>
+                            <div class="title_type_activite title_type_activite_notClicked realisation" data-filter="realisation">
+                                <p>
+                                    Réalisation
+                                </p>
                             </div>
                             <div class="acteur_box realisation">
                                 <img src="img/acteur_profil/ARNAUD_AUGST.jpg" alt="acteur_profil">
@@ -95,7 +96,15 @@
                                     édition
                                 </div>
                                 <div class="section_type_activite section_conception">
-                                    <div class="title_type_activite conception">
+                                    <div class="acteur_box conception">
+                                        <img src="img/acteur_profil/ARNAUD_AUGST.jpg" alt="acteur_profil">
+                                        <p>ARNAUD AUGST, Monteur</p>
+                                    </div>
+                                    <div class="acteur_box conception">
+                                        <img src="img/acteur_profil/ARNAUD_AUGST.jpg" alt="acteur_profil">
+                                        <p>ARNAUD AUGST, Monteurfjbzfjsdfkskodfkonezonf</p>
+                                    </div>
+                                    <div class="title_type_activite title_type_activite_notClicked conception" data-filter="conception">
                                         <p>
                                             Conception
                                         </p>
@@ -106,18 +115,18 @@
                                     </div>
                                     <div class="acteur_box conception">
                                         <img src="img/acteur_profil/ARNAUD_AUGST.jpg" alt="acteur_profil">
-                                        <p>ARNAUD AUGST, Monteur</p>
+                                        <p>ARNAUD AUGST, Monteurfjbzfjsdfkskodfkonezonf</p>
                                     </div>
                                 </div>
                         
                         <div class="section_type_activite section_realisation">
 
-                            <div class="title_type_activite realisation">
+                            <div class="title_type_activite title_type_activite_notClicked realisation" data-filter="realisation">
                                 <p>
                                     Réalisation
                                 </p>
                             </div>
-                            <div class="acteur_box realisation">
+                            <div class="acteur_box realisation conception">
                                 <img src="img/acteur_profil/ARNAUD_AUGST.jpg" alt="acteur_profil">
                                 <p>ARNAUD AUGST, Monteur</p>
                             </div>
@@ -136,7 +145,7 @@
                             diffusion
                         </div>
                         <div class="section_type_activite section_conception">
-                            <div class="title_type_activite conception">
+                            <div class="title_type_activite title_type_activite_notClicked conception" data-filter="conception">
                                 <p>
                                     Conception
                                 </p>
@@ -153,7 +162,7 @@
                         
                         <div class="section_type_activite section_realisation">
                             
-                            <div class="title_type_activite realisation">
+                            <div class="title_type_activite title_type_activite_notClicked realisation" data-filter="realisation">
                                 <p>
                                     Réalisation
                                 </p>
@@ -171,5 +180,10 @@
                 </section>
             </div>
       </div>
+
+      <script type="text/javascript" src="./lib/jquery/jquery-3.4.1.js"></script>
+      <script type="text/javascript" src="./lib/isotope/isotope.pkgd.js"></script>
+      <script type="text/javascript" src="./filter_type_activite.js"></script>		
+
   </body>
 </html>

@@ -72,25 +72,24 @@ $gap : 5vmin;
             position: relative;
 
             // background-color: $background_color_audio_amont ;
+            .title_type_activite{
+                position: relative;
+                text-transform: uppercase;
+                width: $size_acteur_profil;
+                height: $size_acteur_profil;
+                border-radius: 50%;
+                margin: $gap;
+                cursor: pointer;
+            
+                p{
+                    position: relative;
+                    top: 43%;
+                    text-align: center;
+                }
+            }
             .section_type_activite{
                 display: flex;
                 flex-flow: row wrap;
-                .title_type_activite{
-                    position: relative;
-                    background-color: $background_color_type_activite;
-                    color: $colo_banniere_p;
-                    text-transform: uppercase;
-                    width: $size_acteur_profil;
-                    height: $size_acteur_profil;
-                    border-radius: 50%;
-                    margin: $gap;
-                
-                    p{
-                        position: relative;
-                        top: 43%;
-                        text-align: center;
-                    }
-                }
                 .acteur_box{
                     position: relative;
                     width: $size_acteur_profil*2;
@@ -109,6 +108,23 @@ $gap : 5vmin;
                     }
                 
                 }
+            }
+            .grisee{
+                filter: grayscale(1) blur(4px);
+            }
+
+            .title_type_activite_notClicked{
+                background-color: $background_color_type_activite;
+                color: $colo_banniere_p;
+            }
+
+            .title_type_activite_clicked{
+                background-color: white;
+                // border-style: solid;
+                // border-width: 2px;
+                // border-color: $background_color_type_activite;
+                box-shadow:0px 0px 0px 5px $background_color_type_activite inset;
+                color: $background_color_type_activite;
             }
         }
     }
