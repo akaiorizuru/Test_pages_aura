@@ -7,7 +7,7 @@ $colo_banniere_p : white;
 $background_color_type_activite : #d3555d;
 $color_sous_filiere : #ca303a;
 
-
+//var taille
 $size_left_box_width : 60%;
 $size_acteur_profil : 20vmin;
 $gap : 5vmin;
@@ -136,22 +136,8 @@ $gap : 5vmin;
                 box-shadow:0px 0px 0px 5px $color_sous_filiere inset; //border inside
                 color: $color_sous_filiere;
             }
-            // .acteur_box:nth-child(2){
-            //     top: -10px;
-            //     color:red;
-            // }
-            // .acteur_box:nth-child(2){
-            //     top: -10px;
-            //     color:red;
-            //     box-shadow:0px 0px 0px 5px red;
-            //     background-color: red;
-            // }
 
         }
     }
 }
 
-// .center_vertical{
-//     display: flex;
-//     align-items:center;
-// }
