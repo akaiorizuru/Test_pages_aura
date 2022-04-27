@@ -5,6 +5,7 @@ $background_color_section_aval : rgba(48, 155, 209, 0.8);
 $background_color_audio_amont : aqua;
 $colo_banniere_p : white;
 $background_color_type_activite : #d3555d;
+$color_sous_filiere : #ca303a;
 
 
 $size_left_box_width : 60%;
@@ -90,6 +91,7 @@ $gap : 5vmin;
             .section_type_activite{
                 display: flex;
                 flex-flow: row wrap;
+                justify-content: center;
                 .acteur_box{
                     position: relative;
                     width: $size_acteur_profil*2;
@@ -122,6 +124,17 @@ $gap : 5vmin;
                 background-color: white;
                 box-shadow:0px 0px 0px 5px $background_color_type_activite inset; //border inside
                 color: $background_color_type_activite;
+            }
+
+            .title_sous_filiere_notClicked{
+                background-color: $color_sous_filiere;
+                color: $colo_banniere_p;
+            }
+
+            .title_sous_filiere_clicked{
+                background-color: white;
+                box-shadow:0px 0px 0px 5px $color_sous_filiere inset; //border inside
+                color: $color_sous_filiere;
             }
             // .acteur_box:nth-child(2){
             //     top: -10px;

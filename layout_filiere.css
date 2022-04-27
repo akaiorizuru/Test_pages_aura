@@ -80,6 +80,9 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #filiere_audiovisuel .section_filiere .phase .section_type_activite .acteur_box {
@@ -116,5 +119,17 @@
   -webkit-box-shadow: 0px 0px 0px 5px #d3555d inset;
           box-shadow: 0px 0px 0px 5px #d3555d inset;
   color: #d3555d;
+}
+
+#filiere_audiovisuel .section_filiere .phase .title_sous_filiere_notClicked {
+  background-color: #ca303a;
+  color: white;
+}
+
+#filiere_audiovisuel .section_filiere .phase .title_sous_filiere_clicked {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 0px 5px #ca303a inset;
+          box-shadow: 0px 0px 0px 5px #ca303a inset;
+  color: #ca303a;
 }
 /*# sourceMappingURL=layout_filiere.css.map */
