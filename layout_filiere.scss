@@ -141,3 +141,26 @@ $gap : 5vmin;
     }
 }
 
+
+////////////////
+
+.block_filiere{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+#block_filiere_audio{
+    background-color: yellow;
+}
+
+#block_filiere_audio:hover ~ #block_filiere_jeu, #block_filiere_audio:hover ~ #block_filiere_cine{
+    filter: grayscale(1) blur(4px);
+}
+
+#block_filiere_jeu{
+    background-color: orange;
+}
+#block_filiere_cine{
+    background-color: lightblue;
+}
+

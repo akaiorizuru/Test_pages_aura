@@ -3,21 +3,21 @@ $(document).ready(function(){
     let boxes = document.querySelectorAll('.acteur_box');
     
     //Système filtre
-    $(".title_type_activite").click(function(e){
+    $(".objet_filtre").click(function(e){
 
         let filter = "." + e.target.dataset.filter;
         const filterSelected = [];
         //Un bonton est cliqué alors : 
         // si bouton possède la classe type_activite_notClicked (classe affecté aux éléments qui n'ont pas été cliqué ou qui ont été desélectionné)
-        if($(e.target).hasClass('title_type_activite_notClicked')){
-            $(e.target).addClass('title_type_activite_clicked').removeClass('title_type_activite_notClicked');
+        if($(e.target).hasClass('objet_filtre_notClicked')){
+            $(e.target).addClass('objet_filtre_clicked').removeClass('objet_filtre_notClicked');
             $('.acteur_box').not(filter).addClass('grisee');
         }else{
-            $(e.target).addClass('title_type_activite_notClicked').removeClass('title_type_activite_clicked'); 
+            $(e.target).addClass('objet_filtre_notClicked').removeClass('objet_filtre_clicked'); 
             $('.acteur_box').not(filter).removeClass('grisee');
             // $('.acteur_box').not(filter).addClass('CEDRIC');
 
-            $(".title_type_activite_clicked").each(function(i,element) {
+            $(".objet_filtre_clicked").each(function(i,element) {
                 var value_data_filter = element.getAttribute('data-filter');
                 $('.acteur_box').not('.' + value_data_filter).addClass("grisee");
             });
@@ -36,9 +36,9 @@ $(document).ready(function(){
         //     console.log("test pour voir " + box_contain)
         // //Un bonton est cliqué alors : 
         // // si bouton possède la classe type_activite_notClicked (classe affecté aux éléments qui n'ont pas été cliqué ou qui ont été desélectionné)
-        // if(e.target.classList.contains('title_type_activite_notClicked')){
-        //     e.target.classList.add('title_type_activite_clicked');
-        //     e.target.classList.remove('title_type_activite_notClicked');
+        // if(e.target.classList.contains('objet_filtre_notClicked')){
+        //     e.target.classList.add('objet_filtre_clicked');
+        //     e.target.classList.remove('objet_filtre_notClicked');
         //     // if (!document.div.classList.contains('.realisation')){
         //     //     box_contain.classList.add('grisee');
         //     //     console.log('test this if true : ' + box_contain)
@@ -46,13 +46,13 @@ $(document).ready(function(){
         //     console.log(box_contain);
         //     // boxes.querySelector(":not(.realisation)").classList.add('grisee');
         // }else{
-        //     e.target.classList.add('title_type_activite_notClicked');
-        //     e.target.classList.remove('title_type_activite_clicked');  
+        //     e.target.classList.add('objet_filtre_notClicked');
+        //     e.target.classList.remove('objet_filtre_clicked');  
         //     boxes.querySelectorAll(":not(#elem)") 
         //     // boxes.querySelector(":not(" + filter + ")").classList.remove('grisee');
         //     // boxes.querySelector(":not(" + filter + ")").classList.add('CEDRIC');
 
-        //     // document.querySelectorAll(".title_type_activite_clicked").each(function(i,element) {
+        //     // document.querySelectorAll(".objet_filtre_clicked").each(function(i,element) {
         //     //     var value_data_filter = element.getAttribute('data-filter');
         //     //     boxes.querySelector(":not(." + value_data_filter + (")")).classList.add("grisee");
         //     // });
@@ -66,21 +66,21 @@ $(document).ready(function(){
     // let boxes = document.querySelectorAll('.acteur_box');
     
     // //Système filtre
-    // document.querySelector(".title_type_activite").click(function(e){
+    // document.querySelector(".objet_filtre").click(function(e){
 
     //     let filter = "." + e.target.dataset.filter;
     //     const filterSelected = [];
     //     //Un bonton est cliqué alors : 
     //     // si bouton possède la classe type_activite_notClicked (classe affecté aux éléments qui n'ont pas été cliqué ou qui ont été desélectionné)
-    //     if(document.querySelector(e.target).classList.contains('title_type_activite_notClicked')){
-    //         document.querySelector(e.target).classList.add('title_type_activite_clicked').removeClass('title_type_activite_notClicked');
+    //     if(document.querySelector(e.target).classList.contains('objet_filtre_notClicked')){
+    //         document.querySelector(e.target).classList.add('objet_filtre_clicked').removeClass('objet_filtre_notClicked');
     //         document.querySelector('.acteur_box').not(filter).classList.add('grisee');
     //     }else{
-    //         document.querySelector(e.target).classList.add('title_type_activite_notClicked').removeClass('title_type_activite_clicked'); 
+    //         document.querySelector(e.target).classList.add('objet_filtre_notClicked').removeClass('objet_filtre_clicked'); 
     //         document.querySelector('.acteur_box').not(filter).removeClass('grisee');
     //         // document.querySelector('.acteur_box').not(filter).classList.add('CEDRIC');
 
-    //         document.querySelector(".title_type_activite_clicked").each(function(i,element) {
+    //         document.querySelector(".objet_filtre_clicked").each(function(i,element) {
     //             var value_data_filter = element.getAttribute('data-filter');
     //             document.querySelector('.acteur_box').not('.' + value_data_filter).classList.add("grisee");
     //         });
@@ -111,7 +111,7 @@ $(document).ready(function(){
     let maxNb = 85 ;
     let minNb = -maxNb;
     $('.acteur_box').css({"margin":maxNb/2});
-    $('.title_type_activite').css({"margin":maxNb/2});
+    $('.objet_filtre').css({"margin":maxNb/2});
     // console.log(boxes);
     // console.log($('.acteur_box')[2]);
     // console.log(boxes[2])
