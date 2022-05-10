@@ -56,7 +56,7 @@
           transform-origin: bottom right;
 }
 
-#filiere_audiovisuel .section_filiere .phase .title_type_activite {
+#filiere_audiovisuel .section_filiere .phase .objet_filtre {
   position: relative;
   text-transform: uppercase;
   width: 20vmin;
@@ -66,7 +66,7 @@
   cursor: pointer;
 }
 
-#filiere_audiovisuel .section_filiere .phase .title_type_activite p {
+#filiere_audiovisuel .section_filiere .phase .objet_filtre p {
   position: relative;
   top: 43%;
   text-align: center;
@@ -109,12 +109,12 @@
           filter: grayscale(1) blur(4px);
 }
 
-#filiere_audiovisuel .section_filiere .phase .title_type_activite_notClicked {
+#filiere_audiovisuel .section_filiere .phase .objet_filtre_notClicked {
   background-color: #d3555d;
   color: white;
 }
 
-#filiere_audiovisuel .section_filiere .phase .title_type_activite_clicked {
+#filiere_audiovisuel .section_filiere .phase .objet_filtre_clicked {
   background-color: white;
   -webkit-box-shadow: 0px 0px 0px 5px #d3555d inset;
           box-shadow: 0px 0px 0px 5px #d3555d inset;

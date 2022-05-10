@@ -73,7 +73,7 @@ $gap : 5vmin;
             position: relative;
 
             // background-color: $background_color_audio_amont ;
-            .title_type_activite{
+            .objet_filtre{
                 position: relative;
                 text-transform: uppercase;
                 width: $size_acteur_profil;
@@ -115,12 +115,12 @@ $gap : 5vmin;
                 filter: grayscale(1) blur(4px);
             }
 
-            .title_type_activite_notClicked{
+            .objet_filtre_notClicked{
                 background-color: $background_color_type_activite;
                 color: $colo_banniere_p;
             }
 
-            .title_type_activite_clicked{
+            .objet_filtre_clicked{
                 background-color: white;
                 box-shadow:0px 0px 0px 5px $background_color_type_activite inset; //border inside
                 color: $background_color_type_activite;
