@@ -1,0 +1,164 @@
+<div id="volet" class="closed">
+    <!-- Barre supérieure du volet latéral -->
+    
+    <!-- Contenu du volet latéral -->
+    <div id="voletContainer">
+    
+        <!-- Mettre votre code ici -->
+        <style>
+            #volet{
+                background-color : #2B2B2B;
+            }
+            p {
+                color : white;
+                text-transform: capitalize;
+            }
+    
+            h2 {
+                margin: 10px 0px;
+            }
+    
+            #voletVideoPresentation{
+                width:100%;
+            }
+    
+            #voletVideoHasard{
+                width:100%;
+                margin-top:-90px;
+            }
+    
+            #voletAvatar{
+                width:10%;
+                display:none;
+            }
+    
+            #flexbox, #flexbox1, #flexbox2 {
+                display:flex;
+            }
+    
+            #divhaut {
+                padding: 10px;
+            }
+            #divgauche {
+                margin-right:30px;
+            }
+    
+            #divdroite{
+                width:30%
+            }
+    
+            #voletNom {
+                text-transform: uppercase;
+            }
+    
+            #voletPrenom {
+                text-transform: uppercase;
+                margin-right:5px;
+            }
+    
+            #voletStructure, #voletStatut {
+                font-style: italic;
+            }
+    
+            #voletClose {
+                font-weight: bold;
+                margin-right:30px;
+                font-size:2.2em;
+            }
+    
+            .mt-1 {
+                margin-top : 10px;
+                position: absolute;
+                right: 32px;
+                top: 32px;
+                width: 32px;
+                height: 32px;
+                opacity: 0.6;
+                }
+            .mt-1:hover {
+                opacity: 1;
+                cursor: pointer;
+                }
+            .mt-1:before, .mt-1:after {
+                position: absolute;
+                left: 15px;
+                content: ' ';
+                height: 33px;
+                width: 2px;
+                background-color: #fff;
+                }
+            .mt-1:before {
+                transform: rotate(45deg);
+                }
+            .mt-1:after {
+                transform: rotate(-45deg);
+                }
+            
+            .imgReseaux {
+                margin-top:10px;
+                height:40px;
+            }
+    
+            #voletMetiers{
+                margin-right: 5px;
+            }
+    
+    
+    
+        </style>
+        <!-- Fin de votre code -->
+        
+        <!-- ATTENTION : ne surtout pas changer les nom des ID de chaque élément -->
+        <!-- Les contenus sont chargés en JS pour chaque ID (appel à l'API en fonction de l'ID de l'acteur cliqué) -->
+        <!-- Voici la liste des informations récupérées de la BDD de WP et remplies automatiquement via JS -->
+        
+        <!-- Identité -->
+        <div id="divhaut">
+            <div id="flexbox2">
+                <div id="voletClose" class="mt-1"></div>
+                <img id="voletAvatar" src="" alt="">
+                <h2 id="voletMetiers"></h2>
+             </div> 
+        </div>
+    
+     
+        <div id="flexbox">
+            <div id="divgauche">
+                <div id="voletVideoPresentation"></div>
+                <div id="flexbox1">
+                    <h2 id="voletPrenom"></h2>
+                    <h2 id="voletNom"></h2>
+                </div>
+                <div id="voletStructure"></div>
+                <div id="voletStatut"></div>
+                <div id="voletLieux"></div>
+    
+                <div id="voletReseaux">
+                     <a id="voletReseauxPortfolio" href="" class="hidden"><img class="imgReseaux" src="/wp-content/themes/aura-creative/assets/img/web.png"></a>
+                     <a id="voletReseauxBehance" href="" class="hidden"><img class="imgReseaux" src="/wp-content/themes/aura-creative/assets/img/world-wide-web.png"></a>
+                     <a id="voletReseauxLinkedin" href="" class="hidden"><img class="imgReseaux" src="/wp-content/themes/aura-creative/assets/img/linkedin.png"></a>
+                     <a id="voletReseauxInstagram" href="" class="hidden"><img class="imgReseaux" src="/wp-content/themes/aura-creative/assets/img/instagram.png"></a>
+                     <a id="voletReseauxTwitch" href="" class="hidden"><img class="imgReseaux" src="/wp-content/themes/aura-creative/assets/img/world-wide-web.png"></a>
+                     <a id="voletReseauxYoutube" href="" class="hidden"><img class="imgReseaux" src="/wp-content/themes/aura-creative/assets/img/youtube.png"></a>
+                     <a id="voletReseauxDribbble" href="" class="hidden"><img class="imgReseaux" src="/wp-content/themes/aura-creative/assets/img/world-wide-web.png"></a>
+                     <a id="voletReseauxTwitter" href=""class="hidden" ><img class="imgReseaux" src="/wp-content/themes/aura-creative/assets/img/twitter.png"></a>
+                     <a id="voletReseauxVimeo" href="" class="hidden"><img class="imgReseaux" src="/wp-content/themes/aura-creative/assets/img/vimeo.png"></a>
+                     <a id="voletReseauxSoundcloud" href="" class="hidden"><img class="imgReseaux" src="/wp-content/themes/aura-creative/assets/img/world-wide-web.png"></a>
+                     <a id="voletReseauxFacebook" href="" class="hidden"><img class="imgReseaux" src="/wp-content/themes/aura-creative/assets/img/facebook.png"></a>
+                     <a id="voletReseauxTiktok" href="" class="hidden"><img class="imgReseaux" src="/wp-content/themes/aura-creative/assets/img/world-wide-web.png"></a>
+                </div>
+            </div>
+           
+            <div id="divdroite">
+                <h2>À RETENIR</h2>
+                <div id="voletResumeVideo"></div>
+    
+                <h2>INFORMATIONS PRATIQUES</h2>
+                <div id="voletLogiciels"></div>
+    
+                <h2>AURA'ZAR</h2>
+                <div id="voletVideoHasard"></div>
+            </div>
+        </div>
+    </div>
+    </div>

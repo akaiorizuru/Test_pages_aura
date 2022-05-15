@@ -3,6 +3,13 @@
   height: 150px;
   line-height: 150px;
   background-color: aquamarine;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.tag_sous_filiere:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .section_sous_filiere {

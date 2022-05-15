@@ -87,6 +87,8 @@ $gap : 5vmin;
                     position: relative;
                     top: 43%;
                     text-align: center;
+                    /* pointer-events permet de résoudre le prob où la fonction js ne s'emclanche pas lorsque l'utilisateur ne clique que sur span et pas le container parent */
+                    pointer-events: none;
                 }
             }
             .section_type_activite{

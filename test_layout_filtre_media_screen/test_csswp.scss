@@ -6,6 +6,11 @@ $size_objet_filtre : 150px;
     height: $size_objet_filtre;
     line-height: $size_objet_filtre;
     background-color: aquamarine;
+    transition: all .2s ease-in-out;
+}
+
+.tag_sous_filiere:hover{
+    transform: scale(1.05);
 }
 
 //centrer les elements 
