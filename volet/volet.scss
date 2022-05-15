@@ -1,0 +1,38 @@
+// début de la mise en place du test avec des couleurs différents 
+// pour mieux distingué les différents éléments
+$size1 :100px;
+$size2:50px;
+
+li{
+    width: $size1;
+    height: $size2;
+}
+
+#voletClose{
+    width: $size1;
+    height: $size2;
+    background-color: aquamarine;
+}
+
+#otherContainer li{
+    background-color: rgb(114, 73, 145);
+}
+
+#voletContainer{
+    background-color: aqua;
+}
+// fin de la mise en place
+
+#voletContainer.open{
+    display: block;
+}
+
+#voletContainer.close{
+    display:none;
+}
+
+.blur_background{
+    /* classe premettant de grisé et de flouter les éléments qui ne correspondent pas */
+    filter: grayscale(1) blur(4px);
+    pointer-events: none;
+}

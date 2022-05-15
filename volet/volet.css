@@ -1,1 +1,35 @@
-/* No CSS *//*# sourceMappingURL=volet.css.map */
+@charset "UTF-8";
+li {
+  width: 100px;
+  height: 50px;
+}
+
+#voletClose {
+  width: 100px;
+  height: 50px;
+  background-color: aquamarine;
+}
+
+#otherContainer li {
+  background-color: #724991;
+}
+
+#voletContainer {
+  background-color: aqua;
+}
+
+#voletContainer.open {
+  display: block;
+}
+
+#voletContainer.close {
+  display: none;
+}
+
+.blur_background {
+  /* classe premettant de grisé et de flouter les éléments qui ne correspondent pas */
+  -webkit-filter: grayscale(1) blur(4px);
+          filter: grayscale(1) blur(4px);
+  pointer-events: none;
+}
+/*# sourceMappingURL=volet.css.map */
