@@ -1,0 +1,33 @@
+$size_objet_filtre : 150px;
+
+
+.tag_sous_filiere{
+    width: $size_objet_filtre;
+    height: $size_objet_filtre;
+    line-height: $size_objet_filtre;
+    background-color: aquamarine;
+}
+
+//centrer les elements 
+.section_sous_filiere{
+    text-align: center;
+}
+
+.objet_filtre{
+    text-align: center;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.objet_filtre>span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+
+
+//tout les .objet_filtre précédé par un .objet_filtre possède une marge à gauche
+// .objet_filtre + .objet_filtre {
+//     margin-left: 10px;
+// }

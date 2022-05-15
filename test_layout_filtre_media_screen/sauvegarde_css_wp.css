@@ -1,0 +1,524 @@
+/* Custom CSS par AVMN */
+
+:root {
+    /*VARIABLES GLOBALE*/
+    --main_color: #000;
+    --second_color: red;
+    --main_color_filiere_1: #D90000;
+    --main_color_filiere_2: #F2BE1F;
+    --main_color_filiere_3: #B800B8;
+    /* --main_color_filiere_1_2: #d900008e;
+    --main_color_filiere_2_2: #f2bd1f73;
+    --main_color_filiere_3_2: #b800b879; */
+    --desk_width: 1920px;
+    --font_title: 'Oswald', sans-serif;
+    --main_font: 'Poppins', sans-serif;
+    --size_acteur_box : 150px;
+    --size_objet_sous_filiere: 130px;
+    --size_objet_type_activite: 85px;
+  
+    /*AUTRES VARIABLES*/
+  
+  }
+  
+  p{
+    text-transform: none !important;
+  }
+  span{
+    color:white !important;
+  }
+  
+  /* section */
+  .section_phase{
+  height: 100% ! important;
+  min-height: 100vh;
+  }
+  
+  /* bouton changement de section */
+  /* .btn_change_section{
+  position:relative;
+  top : 20px;
+  } */
+  
+  /* bloc des 2 filtres (sous filiere et type d'activité) */
+  .bloc_filter{
+    text-align: center;
+    display:table;
+    border-collapse:separate;
+    border-spacing:5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Btn filtre*/
+  
+  /* chaque filtre */
+  .objet_filtre {
+    display: inline-flex;
+    margin: 0.5em;
+    width: 100px;
+    height: 100px;
+    text-transform: uppercase !important;
+    border-radius: 100% !important;
+    text-align: center;
+    cursor:pointer;
+  }
+  
+  /* .objet_filtre > p{
+    position: relative;
+    top: 43%;
+    text-align: center;
+  } */
+  
+  .objet_filtre{
+    /* border-radius: 100% !important; */
+    align-items: center;
+    justify-content: center;
+    /* text-transform: uppercase !important; */
+  }
+  
+  /* les filtre sous filière */
+  .tag_sous_filiere{
+    height: var(--size_objet_sous_filiere);
+    min-width: var(--size_objet_sous_filiere);
+    overflow: hidden;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    /* padding: .5rem; */
+    /* margin: 2rem; */
+    font-size: 10px;
+  }
+  
+  .change_transparence{
+    opacity: 50%;
+  }
+  
+  .tag_type_activite{
+    min-height: var(--size_objet_type_activite);
+    min-width: var(--size_objet_type_activite);
+    overflow: hidden;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    /* padding: .5rem; */
+    /* margin: 2rem; */
+    font-size: 8px;
+  }
+  
+  .tag_type_activite>p{
+    font-size: 18px;
+    height: calc(var(--size_objet_type_activite)-20px);
+    width: calc(var(--size_objet_type_activite)-20px);
+  }
+  
+  .grisee{
+    filter: grayscale(1) blur(4px);
+  }
+  
+  .objet_filtre_notClicked, .objet_filtre .objet_filtre_notClicked{
+    /* border-radius: 100% !important; */
+    color: white;
+  }
+  
+  
+  .objet_filtre_clicked, .objet_filtre .objet_filtre_clicked{
+    /* border-radius: 100% !important; */
+    background-color: white !important;
+  }
+  
+  /* changer la couleur des bouton en fonction des filtres */
+  /* pour audiovisuel */
+  .section_filiere_audiovisuel .objet_filtre_notClicked, .bloc_filiere .objet_filtre .objet_filtre_notClicked{
+    background-color: var(--main_color_filiere_1);
+    opacity:1;
+  }
+  
+  .section_filiere_audiovisuel .objet_filtre_clicked, .bloc_filiere .objet_filtre .objet_filtre_clicked{
+    box-shadow:0px 0px 0px 5px var(--main_color_filiere_1) inset; /*border inside*/
+    color: var(--main_color_filiere_1) !important;
+    opacity:1;
+  }
+  
+  .section_filiere_audiovisuel .objet_filtre_clicked>span, .bloc_filiere .objet_filtre .objet_filtre_clicked>span{
+    color: var(--main_color_filiere_1);
+  }
+  
+  /* bloc du filtre sous filiere */
+  /* .section_filiere_audiovisuel .bloc_type_activite .objet_filtre_notClicked, .bloc_filiere .objet_filtre .objet_filtre_notClicked{
+    background-color: var(--main_color_filiere_1_2);
+    opacity:1;
+  }
+  
+  .section_filiere_audiovisuel .bloc_type_activite .objet_filtre_clicked, .bloc_filiere .objet_filtre .objet_filtre_clicked{
+    box-shadow:0px 0px 0px 5px var(--main_color_filiere_1_2) inset; 
+    color: var(--main_color_filiere_1);
+    opacity:1;
+  } */
+  
+  
+  /* pour cinéma */
+  .section_filiere_cinema .objet_filtre_notClicked, .objet_filtre .objet_filtre_notClicked{
+    background-color: var(--main_color_filiere_2) !important;
+  }
+  
+  .section_filiere_cinema .objet_filtre_clicked, .objet_filtre .objet_filtre_clicked{
+    box-shadow:0px 0px 0px 5px var(--main_color_filiere_2) inset; /*border inside*/
+    color: var(--main_color_filiere_2);
+  }
+  
+  /* pour jeu vidéo */
+  .section_filiere_jeuvideo .objet_filtre_notClicked, .objet_filtre .objet_filtre_notClicked{
+    background-color: var(--main_color_filiere_3) !important;
+  }
+  
+  .section_filiere_jeuvideo .objet_filtre_clicked, .objet_filtre .objet_filtre_clicked{
+    box-shadow:0px 0px 0px 5px var(--main_color_filiere_3) inset; /*border inside*/
+    color: var(--main_color_filiere_3);
+  }
+  
+  /* bloc de la boite acteur */
+  /* .bloc_box_acteur{
+    margin : 0;
+  }
+  
+  .bloc_box_acteur .acteur_box{
+    display: inline-block;
+  } */
+  
+  /* style acteur_box */
+  .acteur_box{
+    width: calc(var(--size_acteur_box)*1.25);
+    height: calc(var(--size_acteur_box)*1.25);
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    transition: .2s;
+  }
+  
+  .acteur_box:hover {
+    cursor: pointer;
+    opacity: .8;
+    transition: .3s;
+  }
+  
+  .acteur_box>img {
+    border-radius: 100% !important;
+    width: var(--size_acteur_box);
+    height: var(--size_acteur_box);
+    border-style: solid;
+    border-width: 0.5em;
+  }
+  
+  .section_filiere_audiovisuel .acteur_box>img {
+    border-color: var(--main_color_filiere_1);
+  }
+  
+  .section_filiere_cinema .acteur_box>img {
+    border-color: var(--main_color_filiere_2);
+  }
+  
+  .section_filiere_jeuvideo .acteur_box>img {
+    border-color: var(--main_color_filiere_3);
+  }
+  
+  /* titre des phase  */
+  .section_phase{
+    position: relative;
+  }
+  .title_phase{
+    position : absolute; 
+    right: 0;
+  }
+  
+  
+  /* Aurazar */
+  
+  .aurazar-box {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    border: 1px solid blue;
+  }
+  
+  .aurazar-box-auteur {
+    background: lightgray;
+  }
+  
+  .aurazar-box-auteur-identite {
+    text-transform: capitalize;
+  }
+  
+  .aurazar-box-video {
+    background: deeppink;
+    color: white;
+    text-align: center;
+  }
+  
+  /* CSS STICKY
+  
+  .menu-sticker {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--font_title);
+    font-size: 1.1em;
+    display: flex;
+    transform: rotate(270deg);
+    transform-origin: bottom left;
+    position: fixed;
+    top: 73%;
+    left: 40px;
+  }
+  
+  .menu-sticker-item {
+    width: 150px;
+    border: #b4b2b2 2px solid;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 5px;
+    opacity: 0.7;
+  }
+  
+  .menu-sticker-item a{
+    display: block;
+    padding: 5px;
+    opacity: 0.7;
+  }
+  
+  .menu-sticker-item.menu-item-audio:hover a {
+    color: var(--main_color_filiere_1);
+    opacity: 1;
+  }
+  
+  .menu-sticker-item.menu-item-audio:hover {
+    border: var(--main_color_filiere_1) 2px solid;
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  .menu-sticker-item.menu-item-cine:hover a {
+    color: var(--main_color_filiere_2);
+    opacity: 1;
+  }
+  
+  .menu-sticker-item.menu-item-cine:hover {
+    border: var(--main_color_filiere_2) 2px solid;
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  .menu-sticker-item.menu-item-cine:onclick {
+    transform: scale(1);
+  }
+  
+  
+  .menu-sticker-item.menu-item-jv:hover a {
+    color: var(--main_color_filiere_3);
+    opacity: 1;
+  }
+  
+  .menu-sticker-item.menu-item-jv:hover {
+    border: var(--main_color_filiere_3) 2px solid;
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  .menu-sticker-item.menu-item-audio:active {
+    color: var(--main_color_filiere_1);
+    border: var(--main_color_filiere_1) 2px solid;
+  }
+  
+  .menu-sticker-item.menu-item-cine:active {
+    color: var(--main_color_filiere_2);
+    border: var(--main_color_filiere_2) 2px solid;
+  }
+  
+  .menu-sticker-item.menu-item-jv:active {
+    color: var(--main_color_filiere_3);
+    border: var(--main_color_filiere_3) 2px solid;
+  }
+   */
+  
+   /* style hover home */
+  /* #block_filiere_audiovisuel:hover ~ #block_filiere_jeuvideo, #block_filiere_audiovisuel:hover ~ #block_filiere_cinema{
+    filter: grayscale(1) blur(4px);
+  }
+  #block_filiere_jeuvideo:hover ~ #block_filiere_audiovisuel, #block_filiere_jeuvideo:hover ~ #block_filiere_cinema{
+    filter: grayscale(1) blur(4px);
+  }
+  #block_filiere_cinema:hover ~ #block_filiere_jeuvideo, #block_filiere_cinema:hover ~ #block_filiere_audiovisuel{
+    filter: grayscale(1) blur(4px);
+  }
+  
+  #filiere_audiovisuel {
+    overflow-x: auto;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+  }
+  
+  #filiere_audiovisuel .section_filiere:nth-child(1) {
+    background-color: #1a1a1a;
+  }
+  
+  #filiere_audiovisuel .section_filiere:nth-child(2) {
+    background-color: rgba(134, 81, 203, 0.8);
+  }
+  
+  #filiere_audiovisuel .section_filiere:nth-child(3) {
+    background-color: rgba(227, 147, 93, 0.8);
+  }
+  
+  #filiere_audiovisuel .section_filiere:nth-child(4) {
+    background-color: rgba(48, 155, 209, 0.8);
+  }
+  
+  #filiere_audiovisuel .section_filiere {
+    padding-top: 10vmin;
+    height: 100%;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+  }
+  
+  #filiere_audiovisuel .section_filiere .banniere_filiere {
+    height: 100vmin;
+    color: white;
+  }
+  
+  #filiere_audiovisuel .section_filiere .banniere_filiere .container .left_box_banniere {
+    width: 60%;
+    margin-top: 15vh;
+  }
+  
+  #filiere_audiovisuel .section_filiere .phase {
+    position: relative;
+  }
+  
+  #filiere_audiovisuel .section_filiere .phase .title_phase {
+    position: absolute;
+    right: 0;
+    font-size: 10vh;
+    font-weight: 800;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    opacity: 0.8;
+    color: white;
+    text-transform: uppercase;
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+  }
+  
+  #filiere_audiovisuel .section_filiere .phase .objet_filtre {
+    position: relative;
+    text-transform: uppercase;
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 50%;
+    margin: 5vmin;
+    cursor: pointer;
+  }
+  
+  #filiere_audiovisuel .section_filiere .phase .objet_filtre p {
+    position: relative;
+    top: 43%;
+    text-align: center;
+  }
+  
+  #filiere_audiovisuel .section_filiere .phase .section_type_activite {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  #filiere_audiovisuel .section_filiere .phase .section_type_activite .acteur_box {
+    position: relative;
+    width: 40vmin;
+    height: 40vmin;
+    text-align: center;
+  }
+  
+  #filiere_audiovisuel .section_filiere .phase .section_type_activite .acteur_box img {
+    position: relative;
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 50%;
+  }
+  
+  #filiere_audiovisuel .section_filiere .phase .section_type_activite .acteur_box p {
+    position: relative;
+    color: white;
+  }
+  
+  #filiere_audiovisuel .section_filiere .phase .grisee {
+    -webkit-filter: grayscale(1) blur(4px);
+            filter: grayscale(1) blur(4px);
+  }
+  
+  #filiere_audiovisuel .section_filiere .phase .objet_filtre_notClicked {
+    background-color: #d3555d;
+    color: white;
+  }
+  
+  #filiere_audiovisuel .section_filiere .phase .objet_filtre_clicked {
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 0px 5px #d3555d inset;
+            box-shadow: 0px 0px 0px 5px #d3555d inset;
+    color: #d3555d;
+  }
+  
+  #filiere_audiovisuel .section_filiere .phase .title_sous_filiere_notClicked {
+    background-color: #ca303a;
+    color: white;
+  }
+  
+  #filiere_audiovisuel .section_filiere .phase .title_sous_filiere_clicked {
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 0px 5px #ca303a inset;
+            box-shadow: 0px 0px 0px 5px #ca303a inset;
+    color: #ca303a;
+  }
+  
+  .block_filiere {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+  
+  #block_filiere_audio {
+    background-color: yellow;
+  }
+  
+  #block_filiere_audio:hover ~ #block_filiere_jeu, #block_filiere_audio:hover ~ #block_filiere_cine {
+    -webkit-filter: grayscale(1) blur(4px);
+            filter: grayscale(1) blur(4px);
+  }
+  
+  #block_filiere_jeu {
+    background-color: orange;
+  }
+  
+  #block_filiere_cine {
+    background-color: lightblue;
+  } */
+  /*# sourceMappingURL=layout_filiere.css.map */
+  
+  /* ICI VOTRE CODE POUR L'AFFICHAGE SUR TABLETTE jusqu'à 767px, breakpoint initial du thème */
+  @media(max-width: 767px) {
+  
+    /* Ici mettez votre code CSS pour définir ce que vous souhaitez */
+  
+  }
+  
+  /* ICI VOTRE CODE POUR L'AFFICHAGE SUR MOBILE jusqu'à 650px, toujours utile vous verrez ^^ */
+  @media(max-width: 650px) {
+  
+    /* Ici mettez votre code CSS pour définir ce que vous souhaitez */
+  
+  }
